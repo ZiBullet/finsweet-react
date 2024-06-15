@@ -2,12 +2,13 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar"
-import HomePage from "./pages/HomePage"
-import ServicePage from "./pages/ServicePage"
-import CompanyPage from "./pages/CompanyPage"
-import CareerPage from "./pages/CareerPage"
-import BlogPage from "./pages/BlogPage"
-import ContactPage from "./pages/ContactPage"
+import HomePage from "./pages/HomePage/HomePage"
+import ServicePage from "./pages/ServicePage/ServicePage"
+import CompanyPage from "./pages/CompanyPage/CompanyPage"
+import CareerPage from "./pages/CareerPage/CareerPage"
+import BlogPage from "./pages/BlogPage/BlogPage"
+import ContactPage from "./pages/ContactPage/ContactPage"
+import PolicyPage from './pages/PolicyPage/PolicyPage';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/career" element={<CareerPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<PolicyPage />} />
       </Routes>
     </Router>
   )

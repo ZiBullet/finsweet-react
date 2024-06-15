@@ -1,3 +1,8 @@
+$white: #FFFFFF;
+$blue: #444CFC;
+$orange: #FFA155;
+$beige: #FFD3AF;
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +20,101 @@
     padding: 0 15px;
 }
 
-input, button {
+input,
+button {
+    cursor: pointer;
     outline: none;
     border: none;
     background: none;
+}
+
+.decor {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__line {
+        width: 100%;
+    }
+
+    .line-orange {
+        background: $orange;
+    }
+    .line-beige {
+        background: $beige;
+    }
+    .line-blue {
+        background: $blue;
+    }
+}
+
+.btn-request {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    height: 64px;
+    padding: 0 32px;
+    transition: .3s;
+
+    position: relative;
+
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background: $blue;
+
+    & span {
+        position: relative;
+    }
+
+    &:hover {
+        box-shadow: 0 0 30px $blue;
+    }
+
+    &::after {
+        content: url("../icons/btn-request-decor.svg");
+
+        width: 28px;
+        height: 28px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover::after {
+        animation: walkCorners 2s linear;
+    }
+}
+
+@keyframes walkCorners {
+    0% {
+        top: 0;
+        left: 0;
+        rotate: 0deg;
+    }
+    25% {
+        top: 57%;
+        left: 0;
+        rotate: -90deg;
+    }
+    50% {
+        top: 57%;
+        left: 87%;
+        rotate: -180deg;
+    }
+    75% {
+        top: 0;
+        left: 87%;
+        rotate: -270deg;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        rotate: -360deg
+    }
 }

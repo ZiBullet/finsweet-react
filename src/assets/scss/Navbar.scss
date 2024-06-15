@@ -33,8 +33,14 @@ $white: #FFFFFF;
         .header__link {
             display: flex;
             align-items: center;
+            color: $beige;
             gap: 8px;
         }
+
+        .header__link::after {
+            background: $beige;
+        }
+
         .header__link img {
             transition: .3s linear;
         }
@@ -55,6 +61,10 @@ $white: #FFFFFF;
         font-weight: 500;
         line-height: 24px;
         transition: .3s;
+
+        &.active::after {
+            width: 100%;
+        }
 
         &::after {
             content: "";

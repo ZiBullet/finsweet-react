@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoIcon from "../assets/icons/logo.svg";
 import arrowRightIcon from "../assets/icons/arrow-right.svg";
 
@@ -12,28 +12,28 @@ const Navbar = () => {
         </Link>
         <ul className="header__list">
           <li className="header__item">
-            <Link to="/" className="header__link">Home</Link>
+            <NavLink to="/" className="header__link">Home</NavLink>
           </li>
           <li className="header__item">
-            <Link to="/service" className="header__link">Service</Link>
+            <NavLink to="/service" className="header__link">Service</NavLink>
           </li>
           <li className="header__item">
-            <Link to="/company" className="header__link">Company</Link>
+            <NavLink to="/company" className="header__link">Company</NavLink>
           </li>
           <li className="header__item">
-            <Link to="/career" className="header__link">Career</Link>
+            <NavLink to="/career" className="header__link">Career</NavLink>
           </li>
           <li className="header__item">
-            <Link to="/blog" className="header__link">Blog</Link>
+            <NavLink to="/blog" className="header__link">Blog</NavLink>
           </li>
           <li className="header__item">
-            <Link to="/contact" className="header__link">Contact us</Link>
+            <NavLink to="/contact" className="header__link">Contact us</NavLink>
           </li>
           <li className="header__item">
-            <Link to="/" className="header__link">
+            <NavLink to="*" className="header__link">
               <span>Clone project</span>
               <img src={arrowRightIcon} alt="arrow right icon" />
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
