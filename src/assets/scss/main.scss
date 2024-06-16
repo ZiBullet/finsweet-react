@@ -1,3 +1,5 @@
 @import "./fonts.scss",
-"./base.scss", "./Navbar.scss", "./NavbarModal.scss",
-"./HomePage/Banner.scss"
+"./base.scss", "./Navbar.scss", "./NavbarModal.scss";
+
+// HomePage
+@import "./HomePage/Banner.scss", "./HomePage/About.scss";

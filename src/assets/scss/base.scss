@@ -1,144 +1,153 @@
-$white: #FFFFFF;
+$white: #ffffff;
 $darkBlue: #232536;
-$blue: #444CFC;
-$orange: #FFA155;
-$beige: #FFD3AF;
+$blue: #444cfc;
+$orange: #ffa155;
+$black: #000000;
+$beige: #ffd3af;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    max-width: 1310px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1310px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title-mini {
+  color: $black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 
-    &::-webkit-scrollbar {
-        width: 6px;
-        background: $white;
+  &::-webkit-scrollbar {
+    width: 6px;
+    background: $white;
 
-        &-thumb {
-            background: $darkBlue;
-        }
+    &-thumb {
+      background: $darkBlue;
     }
+  }
 }
 
 input,
 button {
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
 }
 
 .decor {
-    position: absolute;
+  position: absolute;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &__line {
-        width: 100%;
-    }
+  &__line {
+    width: 100%;
+  }
 
-    .line-orange {
-        background: $orange;
-    }
-    .line-beige {
-        background: $beige;
-    }
-    .line-blue {
-        background: $blue;
-    }
+  .line-orange {
+    background: $orange;
+  }
+  .line-beige {
+    background: $beige;
+  }
+  .line-blue {
+    background: $blue;
+  }
 }
 
 .btn-request {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 
-    height: 64px;
-    padding-inline: 32px;
-    transition: .3s;
+  height: 64px;
+  padding-inline: 32px;
+  transition: 0.3s;
 
+  position: relative;
+
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background: $blue;
+
+  & span {
     position: relative;
+  }
 
-    color: $white;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    background: $blue;
+  &:hover {
+    box-shadow: 0 0 30px $blue;
+  }
 
-    & span {
-        position: relative;
-    }
+  &::after {
+    content: url("../icons/btn-request-decor.svg");
 
-    &:hover {
-        box-shadow: 0 0 30px $blue;
-    }
+    width: 28px;
+    height: 28px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 54px;
+    padding-inline: 24px;
 
     &::after {
-        content: url("../icons/btn-request-decor.svg");
-
-        width: 28px;
-        height: 28px;
-
-        position: absolute;
-        top: 0;
-        left: 0;
+      width: 15px;
+      height: 15px;
     }
+  }
 
-    @media screen and (max-width: 425px) {
-        height: 54px;
-        padding-inline: 24px;
-
-        &::after {
-            width: 15px;
-            height: 15px;
-        }
-    }
-
-    &:hover::after {
-        animation: walkCorners 2s linear;
-    }
+  &:hover::after {
+    animation: walkCorners 2s linear;
+  }
 }
 
 @keyframes walkCorners {
-    0% {
-        top: 0;
-        left: 0;
-        rotate: 0deg;
-    }
-    25% {
-        top: 57%;
-        left: 0;
-        rotate: -90deg;
-    }
-    50% {
-        top: 57%;
-        left: 87%;
-        rotate: -180deg;
-    }
-    75% {
-        top: 0;
-        left: 87%;
-        rotate: -270deg;
-    }
-    100% {
-        top: 0;
-        left: 0;
-        rotate: -360deg
-    }
+  0% {
+    top: 0;
+    left: 0;
+    rotate: 0deg;
+  }
+  25% {
+    top: 57%;
+    left: 0;
+    rotate: -90deg;
+  }
+  50% {
+    top: 57%;
+    left: 87%;
+    rotate: -180deg;
+  }
+  75% {
+    top: 0;
+    left: 87%;
+    rotate: -270deg;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    rotate: -360deg;
+  }
 }
