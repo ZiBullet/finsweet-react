@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { Link, NavLink } from "react-router-dom";
 import logoIcon from "../assets/icons/logo.svg";
 import arrowRightIcon from "../assets/icons/arrow-right.svg";
 
+const Navbar = ({ openNavbar }) => {
 
-const Navbar = () => {
   return (
     <header className="header">
       <nav className="header__nav container">
@@ -30,12 +31,18 @@ const Navbar = () => {
             <NavLink to="/contact" className="header__link">Contact us</NavLink>
           </li>
           <li className="header__item">
-            <NavLink to="*" className="header__link">
+            <NavLink to="/policy" className="header__link">
               <span>Clone project</span>
               <img src={arrowRightIcon} alt="arrow right icon" />
             </NavLink>
           </li>
         </ul>
+
+        <button className="header__burger-btn" onClick={openNavbar}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
   )

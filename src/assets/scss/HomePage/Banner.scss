@@ -30,9 +30,9 @@ $white: #FFFFFF;
             position: relative;
 
             color: $white;
-            font-size: 56px;
+            font-size: clamp(1rem, 0.167rem + 4.17vw, 3.5rem);
             font-weight: 600;
-            line-height: 68px;
+            line-height: clamp(1.875rem, 1.083rem + 3.96vw, 4.25rem);
             margin-bottom: 24px;
 
             &::after {
