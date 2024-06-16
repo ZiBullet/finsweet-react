@@ -1,4 +1,5 @@
 $white: #FFFFFF;
+$darkBlue: #232536;
 $blue: #444CFC;
 $orange: #FFA155;
 $beige: #FFD3AF;
@@ -22,6 +23,15 @@ $beige: #FFD3AF;
 
 body {
     overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background: $white;
+
+        &-thumb {
+            background: $darkBlue;
+        }
+    }
 }
 
 input,
@@ -60,7 +70,7 @@ button {
     gap: 16px;
 
     height: 64px;
-    padding: 0 32px;
+    padding-inline: 32px;
     transition: .3s;
 
     position: relative;
@@ -88,6 +98,16 @@ button {
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    @media screen and (max-width: 425px) {
+        height: 54px;
+        padding-inline: 24px;
+
+        &::after {
+            width: 15px;
+            height: 15px;
+        }
     }
 
     &:hover::after {

@@ -18,7 +18,7 @@ const Banner = () => {
                             <img src={arrowRightIcon} alt="arrowRightIcon" />
                         </button>
                     </div>
-                    <div className="banner__img">
+                    <div className="banner__top-img">
                         <div className="banner__decor-before decor">
                             <div className="decor__line line-orange"></div>
                             <div className="decor__line line-beige"></div>
