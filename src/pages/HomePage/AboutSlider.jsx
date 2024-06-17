@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const AboutSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const translateSlide = {
     transform: `translateX(-${currentIndex * (100 / 3)}%)`,
   };
@@ -10,7 +11,7 @@ const AboutSlider = ({ images }) => {
   };
   const prevSlide = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
-  };
+  };  
 
   return (
     <div className="about__content slider">
@@ -24,6 +25,7 @@ const AboutSlider = ({ images }) => {
               className="about__content-img"
               key={image.id}
               src={image.src}
+              style={{width: `${100 / 3}%`}}
               alt=""
             />
           ))}
