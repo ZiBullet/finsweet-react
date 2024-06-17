@@ -33,10 +33,6 @@ $black: #000000;
     &-title {
       max-width: 674px;
       width: 100%;
-      color: $darkBlue;
-      font-size: clamp(1rem, 0.333rem + 3.33vw, 3rem);
-      font-weight: 600;
-      line-height: clamp(2rem, 1.458rem + 2.71vw, 3.625rem);
     }
 
     &-text-block {
@@ -56,13 +52,6 @@ $black: #000000;
         font-size: clamp(1rem, 0.583rem + 2.08vw, 2.25rem);
         font-weight: 600;
         line-height: clamp(1rem, 0.167rem + 4.17vw, 3.5rem);
-      }
-
-      &-text {
-        color: #5d5f6d;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
       }
     }
   }

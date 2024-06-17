@@ -12,7 +12,7 @@ const Banner = () => {
                 <div className="banner__top">
                     <div className="banner__top-desc">
                         <h1 className="banner__top-title">Transform Your Idea Into Reality with Finsweet</h1>
-                        <p className="banner__top-text">The entire Finsweet team knows what&apos;s good with Webflow and you can too with 1 week and a good attitude.</p>
+                        <p className="banner__top-text text-p">The entire Finsweet team knows what&apos;s good with Webflow and you can too with 1 week and a good attitude.</p>
                         <button className="banner__top-btn btn-request">
                             <span>Request Quote</span>
                             <img src={arrowRightIcon} alt="arrowRightIcon" />

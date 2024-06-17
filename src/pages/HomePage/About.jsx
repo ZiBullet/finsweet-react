@@ -8,13 +8,13 @@ const About = ({ images }) => {
         <div className="about__top">
           <h5 className="about__top-title-mini title-mini">ABOUT US</h5>
           <div className="about__top-desc">
-            <h2 className="about__top-title">
+            <h2 className="about__top-title title-h2">
               The company leads entire webdesign process from concept to
               delivery.
             </h2>
             <div className="about__top-text-block">
               <h3 className="about__top-text-block-title">The Era Of Technology.</h3>
-              <p className="about__top-text-block-text">
+              <p className="about__top-text-block-text text-p">
                 Through True Rich Attended does no end it his mother since real
                 had half every him case in packages enquire we up ecstatic
                 unsatiable saw his giving Remain expense you position concluded.{" "}

@@ -1,5 +1,6 @@
 import Banner from "./Banner";
 import About from "./About";
+import Expertise from "./Expertise"
 import { useState } from "react";
 
 import about1 from "./assets/images/about1.png";
@@ -34,6 +35,7 @@ const HomePage = () => {
     <main className="main">
       <Banner />
       <About images={images} />
+      <Expertise />
     </main>
   );
 };

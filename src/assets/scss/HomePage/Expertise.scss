@@ -1,0 +1,147 @@
+$skyblue: #ecf8f9;
+$blue: #444cfc;
+$black: #000000;
+$gold: #ffe6d2;
+$orange: #FFA155;
+$beige: #FFD3AF;
+$white: #ffffff;
+
+.expertise {
+  background: $skyblue;
+  padding: 96px 0;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1198px) {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+
+  &__desc {
+    max-width: 622px;
+    width: 100%;
+    @media screen and (max-width: 1198px) {
+      align-self: flex-start;
+    }
+  }
+
+  &__title-mini {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__boxes {
+    position: relative;
+
+    max-width: 515px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -16px;
+      left: 0;
+
+      width: 16px;
+      height: 16px;
+
+      animation: walkingDot 4s linear infinite;
+    }
+    @media screen and (max-width: 1198px) {
+      align-self: flex-end;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 32px;
+    gap: 16px;
+    background: $white;
+
+    &-img {
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $gold;
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &-title {
+      color: $black;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    &-text {
+      color: #5D5F6D;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+
+  .decor {
+    flex-direction: row;
+    width: 100%;
+    height: 8px;
+    left: 0;
+    bottom: -8px;
+
+    .line-orange {
+      width: 135px;
+    }
+    .line-beige {
+      width: 246px;
+    }
+    .line-blue {
+      width: 132px;
+    }
+  }
+}
+
+
+@keyframes walkingDot {
+  0% {
+    left: 0;
+    background: $orange;
+  }
+  25% {
+    left: 16%;
+    background: $orange;
+  }
+  50% {
+    left: 64%;
+    background: $beige;
+  }
+  75% {
+    left: 96%;
+    background: $blue;
+  }
+  100% {
+    left: 0;
+    background: $orange;
+  }
+}
