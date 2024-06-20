@@ -1,0 +1,128 @@
+$blue: #666DFF;
+$white: #FFFFFF;
+$darkBlue: #232536;
+
+.newsletter {
+    margin-bottom: 96px;
+
+    &__wrap {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 334px;
+        background: $blue;
+        padding: 38px 0;
+        padding-inline: 32px 38px;
+        &::before {
+            content: url("../icons/newsletter-decor.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 88px;
+            height: 80px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            justify-content: flex-end;
+            flex-direction: column;
+            gap: 32px;
+
+        }
+
+        @media screen and (max-width: 480px) {
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    &__desc {
+        max-width: 488px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__title-mini {
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+    }
+
+    &__title {
+        color: $white;
+        font-size: clamp(1.375rem, 1.083rem + 1.46vw, 2.25rem);
+        font-weight: 600;
+        line-height: clamp(2.25rem, 1.875rem + 1.88vw, 3.375rem);
+    }
+
+    &__form {
+        max-width: 454px;
+        width: 100%;
+        height: 64px;
+    }
+
+    &__field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        span {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+
+            color: $darkBlue;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            opacity: 0.4;
+            transition: .3s;
+        }
+
+        &-input {
+            width: 100%;
+            height: 100%;
+            padding: 20px 30px;
+            background: $white;
+
+            color: $darkBlue;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
+            &:focus + span {
+                color: $white;
+                top: -24px;
+                left: 0;
+                opacity: 1;
+            }
+        }
+    }
+    &__decor {
+        width: 24px;
+        height: 100%;
+        top: 0;
+        right: 0;
+
+
+        .line-orange {
+            height: 25%;
+        }
+        .line-beige {
+            height: 65%;
+        }
+        .line-blue {
+            height: 15%;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Services from "./Services";
 import Process from "./Process";
 import Customers from "./Customers";
 import Blogs from "./Blogs";
+import Newsletter from "../../components/Newsletter";
 import { useState } from "react";
 
 import about1 from "./assets/images/about1.png";
@@ -64,6 +65,7 @@ const HomePage = () => {
       <Process />
       <Customers />
       <Blogs allBlogs={allBlogs} />
+      <Newsletter />
     </main>
   );
 };

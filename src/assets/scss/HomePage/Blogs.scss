@@ -5,8 +5,8 @@ $white: #FFFFFF;
 
 .blogs {
     padding: 96px 0;
+    margin-bottom: 96px;
     background: $lightBlue;
-
     &__wrap {
         display: flex;
         flex-direction: column;
