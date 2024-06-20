@@ -1,0 +1,229 @@
+$darkBlue: #232536;
+$skyblue: #F9F9FF;
+$blue: #666DFF;
+$black: #000000;
+$white: #FFFFFF;
+
+.customers {
+    background: $skyblue;
+    padding: 96px 0;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1145px) {
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    &__desc {
+        position: relative;
+
+        max-width: 492px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -32px;
+            left: 0;
+
+            width: 16px;
+            height: 16px;
+            background: $blue;
+        }
+
+        @media screen and (max-width: 1145px) {
+            align-self: flex-start;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        color: $darkBlue;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 24px;
+    }
+
+    &__amount {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &-photos {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        &-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        &-num {
+            color: $black;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__reviews {
+        position: relative;
+
+        max-width: 604px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        padding: 40px 0;
+
+        &-slides {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            transition: .3s;
+            gap: 40px;
+        }
+
+
+
+        &-pagination {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-dot {
+            width: 10px;
+            height: 10px;
+            background: $darkBlue;
+            opacity: 0.2;
+            border-radius: 50%;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+    &__review {
+        position: relative;
+        min-width: 100%;
+
+        background: $white;
+        padding: 48px 40px 42px;
+
+
+        &::after {
+            content: url("../icons/quote.svg");
+            position: absolute;
+            top: -20px;
+            right: 40px;
+        }
+
+        &-decor {
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 100%;
+            .line-orange {
+                height: 20%;
+            }
+            .line-beige {
+                height: 70%;
+            }
+            .line-blue {
+                height: 10%;
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &-text {
+            max-width: 472px;
+            width: 100%;
+            color: $darkBlue;
+            font-size: clamp(1rem, 0.833rem + 0.83vw, 1.5rem);
+            font-weight: 600;
+            line-height: clamp(1.75rem, 1.583rem + 0.83vw, 2.25rem);
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            @media screen and (max-width: 454px) {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        &-img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        &-name {
+            color: $darkBlue;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        &-company {
+            color: $darkBlue;
+            opacity: 0.6;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+        &-logo {
+            @media screen and (max-width: 454px) {
+                align-self: flex-end;
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@ import About from "./About";
 import Expertise from "./Expertise"
 import Services from "./Services";
 import Process from "./Process";
+import Customers from "./Customers";
 import { useState } from "react";
 
 import about1 from "./assets/images/about1.png";
@@ -40,6 +41,7 @@ const HomePage = () => {
       <Expertise />
       <Services />
       <Process />
+      <Customers />
     </main>
   );
 };
