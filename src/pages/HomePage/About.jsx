@@ -3,7 +3,7 @@ import AboutSlider from "./AboutSlider";
 
 const About = ({ images }) => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__wrap container">
         <div className="about__top">
           <h5 className="about__top-title-mini title-mini">ABOUT US</h5>

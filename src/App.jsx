@@ -10,6 +10,7 @@ import CareerPage from "./pages/CareerPage/CareerPage"
 import BlogPage from "./pages/BlogPage/BlogPage"
 import ContactPage from "./pages/ContactPage/ContactPage"
 import PolicyPage from './pages/PolicyPage/PolicyPage';
+import FooterNav from './components/FooterNav';
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/policy" element={<PolicyPage />} />
       </Routes>
+      <FooterNav />
     </Router>
   )
 }

@@ -4,7 +4,7 @@ const AboutSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const translateSlide = {
-    transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+    transform: `translateX(calc(-${currentIndex * (100 / 3)}% - ${currentIndex * 12}px))`,
   };
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
