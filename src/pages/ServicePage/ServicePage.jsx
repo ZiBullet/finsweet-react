@@ -4,6 +4,7 @@ import TechnicalSupport from "./TechnicalSupport"
 import Development from "./Development"
 import Aws from "./Aws"
 import Consulting from "./Consulting"
+import InformationTechnology from "./InformationTechnology"
 
 const ServicePage = () => {
   return (
@@ -14,6 +15,7 @@ const ServicePage = () => {
       <Development />
       <Aws />
       <Consulting />
+      <InformationTechnology />
     </main>
   )
 }
