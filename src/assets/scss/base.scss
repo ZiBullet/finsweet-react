@@ -45,9 +45,23 @@ $text-p: #5D5F6D;
   line-height: 24px;
 }
 
+.title-h3 {
+  color: $darkBlue;
+  font-size: clamp(1.125rem, 0.75rem + 1.88vw, 2.25rem);
+  font-weight: 600;
+  line-height: clamp(2.125rem, 1.708rem + 2.08vw, 3.375rem);
+}
+
+.title-h4 {
+  color: $black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
 body {
   overflow-x: hidden;
-
+  
   &::-webkit-scrollbar {
     width: 6px;
     background: $white;
@@ -85,9 +99,11 @@ address {
   .line-orange {
     background: $orange;
   }
+
   .line-beige {
     background: $beige;
   }
+
   .line-blue {
     background: $blue;
   }
@@ -150,21 +166,25 @@ address {
     left: 0;
     rotate: 0deg;
   }
+
   25% {
     top: 57%;
     left: 0;
     rotate: -90deg;
   }
+
   50% {
     top: 57%;
     left: 87%;
     rotate: -180deg;
   }
+
   75% {
     top: 0;
     left: 87%;
     rotate: -270deg;
   }
+
   100% {
     top: 0;
     left: 0;

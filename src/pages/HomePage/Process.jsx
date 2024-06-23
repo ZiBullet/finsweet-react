@@ -6,9 +6,9 @@ import deploymentIcon from "./assets/icons/deployment.svg";
 import maintanceIcon from "./assets/icons/maintance.svg";
 
 
-const Process = () => {
+const Process = ({ parentClass }) => {
     return (
-        <section className="process">
+        <section className={`process ${parentClass}`}>
             <div className="process__wrap container">
                 <div className="process__desc">
                     <h5 className="process__title-mini title-mini">Our Process</h5>

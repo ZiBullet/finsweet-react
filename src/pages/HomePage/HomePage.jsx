@@ -62,7 +62,7 @@ const HomePage = () => {
       <About images={images} />
       <Expertise />
       <Services />
-      <Process />
+      <Process parentClass={"home-page"} />
       <Customers />
       <Blogs allBlogs={allBlogs} />
       <Newsletter />

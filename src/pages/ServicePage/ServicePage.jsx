@@ -1,10 +1,12 @@
 import Services from "./Services"
 import Process from "../HomePage/Process"
+import TechnicalSupport from "./TechnicalSupport"
 const ServicePage = () => {
   return (
     <main className="main">
       <Services />
-      <Process />
+      <Process parentClass={"service-page"} />
+      <TechnicalSupport />
     </main>
   )
 }
