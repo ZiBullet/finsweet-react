@@ -3,6 +3,7 @@ import Process from "../HomePage/Process"
 import TechnicalSupport from "./TechnicalSupport"
 import Development from "./Development"
 import Aws from "./Aws"
+import Consulting from "./Consulting"
 
 const ServicePage = () => {
   return (
@@ -12,6 +13,7 @@ const ServicePage = () => {
       <TechnicalSupport />
       <Development />
       <Aws />
+      <Consulting />
     </main>
   )
 }
