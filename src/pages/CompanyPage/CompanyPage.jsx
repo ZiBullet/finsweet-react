@@ -1,7 +1,10 @@
+import Company from "./Company"
 
-const CompanyPage = () => {
+const CompanyPage = ({ images }) => {
   return (
-    <div>CompanyPage</div>
+    <main className="main">
+      <Company images={images} parentClass={"company-page"} />
+    </main>
   )
 }
 

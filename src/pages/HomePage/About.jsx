@@ -1,7 +1,7 @@
 import arrowRightBlackIcon from "./assets/icons/arrow-right-black.svg"
 import AboutSlider from "./AboutSlider";
 
-const About = ({ images }) => {
+const About = ({ images, parentClass }) => {
   return (
     <section className="about" id="about">
       <div className="about__wrap container">
@@ -23,7 +23,7 @@ const About = ({ images }) => {
           </div>
         </div>
         
-        {images && <AboutSlider images={images} />}
+        {images && <AboutSlider images={images} parentClass={parentClass} />}
 
         <div className="about__bottom">
           <div className="about__bottom-stats">

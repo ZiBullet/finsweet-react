@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const AboutSlider = ({ images }) => {
+const AboutSlider = ({ images, parentClass }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const translateSlide = {
@@ -11,10 +11,10 @@ const AboutSlider = ({ images }) => {
   };
   const prevSlide = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
-  };  
+  };
 
   return (
-    <div className="about__content slider">
+    <div className={`about__content ${parentClass} slider`}>
       <div className="about__content-slides slider__slides">
         <div
           className="about__content-slide slider__slide"
@@ -25,7 +25,7 @@ const AboutSlider = ({ images }) => {
               className="about__content-img"
               key={image.id}
               src={image.src}
-              style={{width: `${100 / 3}%`}}
+              style={{ width: `${100 / 3}%` }}
               alt=""
             />
           ))}
@@ -36,14 +36,14 @@ const AboutSlider = ({ images }) => {
           <div className="decor__line line-blue"></div>
         </div>
       </div>
-      <div className="slider__btns">
-        <button className="slider__btn btn-prev" onClick={prevSlide}>
-          {"<"}
-        </button>
-        <button className="slider__btn btn-next" onClick={nextSlide}>
-          {">"}
-        </button>
-      </div>
+
+      <button className="slider__btn btn-prev" onClick={prevSlide}>
+        {"<"}
+      </button>
+      <button className="slider__btn btn-next" onClick={nextSlide}>
+        {">"}
+      </button>
+
     </div>
   );
 };

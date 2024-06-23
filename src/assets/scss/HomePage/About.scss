@@ -61,7 +61,7 @@ $black: #000000;
     align-items: center;
 
 
-    &-slides {
+    &.home-page &-slides {
       width: 97%;
       position: relative;
     }
@@ -76,7 +76,7 @@ $black: #000000;
       flex: 0 0 auto;
     }
 
-    .decor {
+    &.home-page .decor {
       top: 0;
       right: -38px;
       width: 18px;
@@ -188,18 +188,8 @@ $black: #000000;
     transition: 0.3s;
   }
 
-  &__btns {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-
-    display: flex;
-    align-items: center;
-    gap: 25px;
-  }
-
   &__btn {
-    position: relative;
+    position: absolute;
     font-size: clamp(1.5rem, 0.854rem + 3.23vw, 3.438rem);
     height: clamp(0.875rem, 0.625rem + 1.25vw, 1.625rem);
     display: flex;
@@ -207,7 +197,16 @@ $black: #000000;
     justify-content: center;
     color: $blue;
 
+    top: 50%;
+    transform: translateY(-50%);
     transition: 0.3s;
+
+    &.btn-prev {
+      left: 0;
+    }
+    &.btn-next {
+      right: 20px;
+    }
 
     &.btn-prev:hover {
       text-shadow: -8px 0 10px $blue;
