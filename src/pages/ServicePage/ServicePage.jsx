@@ -1,7 +1,11 @@
-
+import Services from "./Services"
+import Process from "../HomePage/Process"
 const ServicePage = () => {
   return (
-    <div>ServicePage</div>
+    <main className="main">
+      <Services />
+      <Process />
+    </main>
   )
 }
 

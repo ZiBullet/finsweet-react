@@ -7,13 +7,13 @@ $blue: #444cfc;
   background: $beige;
   padding: 96px 0;
 
-  &__wrap {
+  &.home-page &__wrap {
     display: flex;
     flex-direction: column;
     gap: 80px;
   }
 
-  &__desc {
+  &.home-page &__desc {
     max-width: 778px;
     width: 100%;
   }

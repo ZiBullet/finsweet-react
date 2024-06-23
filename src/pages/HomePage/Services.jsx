@@ -6,7 +6,7 @@ import developmentIcon from "./assets/icons/web-development.svg";
 
 const Services = () => {
   return (
-    <section className="services">
+    <section className="services home-page">
       <div className="services__wrap container">
         <div className="services__desc">
           <h5 className="services__title-mini title-mini">Our Services</h5>
