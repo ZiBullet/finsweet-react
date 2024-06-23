@@ -1,0 +1,38 @@
+$darkBlue: #232536;
+
+.aws {
+    padding-bottom: 96px;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        @media screen and (max-width: 1080px) {
+            flex-direction: column;
+            align-items: normal;
+        }
+    }
+
+    &__desc {
+        max-width: 624px;
+        width: 100%;
+    }
+
+    &__title-mini {
+        opacity: 0.87;
+        color: $darkBlue;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        align-self: center;
+        max-width: 516px;
+        width: 100%;
+    }
+}
