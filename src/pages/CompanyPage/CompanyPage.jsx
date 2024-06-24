@@ -3,6 +3,7 @@ import Story from "./Story";
 import Expertise from "../HomePage/Expertise";
 import Vision from "./Vision";
 import Team from "./Team";
+import Newsletter from "../../components/Newsletter"
 
 const CompanyPage = ({ images }) => {
   return (
@@ -12,6 +13,7 @@ const CompanyPage = ({ images }) => {
       <Expertise />
       <Vision />
       <Team />
+      <Newsletter />
     </main>
   )
 }
