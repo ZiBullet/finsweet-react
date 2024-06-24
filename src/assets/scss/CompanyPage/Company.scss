@@ -71,5 +71,12 @@ $beige: #FFD3AF;
                 width: 15%;
             }
         }
+        &.company-page .btn-prev {
+            left: 0;
+        }
+        &.company-page .btn-next {
+            right: 0;
+        }
     }
+
 }

@@ -201,10 +201,10 @@ $black: #000000;
     transform: translateY(-50%);
     transition: 0.3s;
 
-    &.btn-prev {
+    .home-page &.btn-prev {
       left: 0;
     }
-    &.btn-next {
+    .home-page &.btn-next {
       right: 20px;
     }
 

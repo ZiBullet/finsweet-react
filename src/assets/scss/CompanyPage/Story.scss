@@ -1,0 +1,120 @@
+$darkBlue: #232536;
+$blue: #666DFF;
+
+.story {
+    padding-bottom: 96px;
+
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 15px;
+            background: $blue;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__top {
+        padding-top: 32px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 32px;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        &-title-mini {
+            color: $darkBlue;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+        }
+
+
+        &-stats {
+            max-width: 624px;
+            width: 100%;
+            padding: 62px 110px;
+            background: #FFD3AF91;
+            display: grid;
+            align-items: flex-start;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 62px;
+
+            @media screen and (max-width: 1024px) {
+                align-self: center;
+                padding: 32px;
+            }
+
+            @media screen and (max-width: 480px) {
+                grid-template-columns: 138px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &-stat {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .decor {
+                left: 0;
+                bottom: 30px;
+                flex-direction: row;
+                width: 72px;
+                height: 6px;
+
+                .line-blue {
+                    width: 10px;
+                }
+
+                .line-beige {
+                    width: 45px;
+                }
+
+                .line-orange {
+                    width: 16px;
+                }
+            }
+
+            &-text {
+                color: $darkBlue;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 28px;
+            }
+        }
+
+    }
+
+    &__desc {
+        max-width: 550px;
+        width: 100%;
+    }
+
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        background: #FAFAFC;
+    }
+}

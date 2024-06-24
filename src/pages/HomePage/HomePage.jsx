@@ -8,12 +8,12 @@ import Blogs from "./Blogs";
 import Newsletter from "../../components/Newsletter";
 
 
-const HomePage = ({ images, allBlogs }) => {
+const HomePage = ({ images, allBlogs, clients }) => {
   const parentClass = "home-page";
 
   return (
     <main className="main">
-      <Banner />
+      <Banner clients={clients} />
       <About images={images} parentClass={parentClass} />
       <Expertise />
       <Services />
