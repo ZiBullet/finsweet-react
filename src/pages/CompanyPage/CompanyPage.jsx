@@ -2,6 +2,7 @@ import Company from "./Company";
 import Story from "./Story";
 import Expertise from "../HomePage/Expertise";
 import Vision from "./Vision";
+import Team from "./Team";
 
 const CompanyPage = ({ images }) => {
   return (
@@ -10,6 +11,7 @@ const CompanyPage = ({ images }) => {
       <Story />
       <Expertise />
       <Vision />
+      <Team />
     </main>
   )
 }
