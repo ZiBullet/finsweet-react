@@ -1,9 +1,13 @@
 import Career from "./Career"
+import Positions from "./Positions"
 
-const CareerPage = () => {
+const CareerPage = ({ jobs }) => {
+
+
   return (
     <main className="main">
       <Career />
+      <Positions jobs={jobs} />
     </main>
   )
 }
