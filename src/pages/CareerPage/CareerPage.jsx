@@ -1,7 +1,10 @@
+import Career from "./Career"
 
 const CareerPage = () => {
   return (
-    <div>CareerPage</div>
+    <main className="main">
+      <Career />
+    </main>
   )
 }
 

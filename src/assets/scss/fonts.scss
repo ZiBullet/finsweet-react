@@ -1,4 +1,4 @@
-$Poppins: ("Regular", 400), ("Medium", 500), ("Semibold", 600);
+$Poppins: ("Regular", 400), ("Medium", 500), ("SemiBold", 600), ("ExtraBold", 900);
 
 @each $name, $weight in $Poppins {
     @font-face {
