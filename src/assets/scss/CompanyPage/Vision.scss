@@ -1,0 +1,31 @@
+.vision {
+    padding: 96px 0;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        @media screen and (max-width: 620px) {
+            gap: 32px;
+        }
+    }
+
+    &__desc {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    &__title-mini {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        max-width: 622px;
+        width: 100%;
+    }
+}
