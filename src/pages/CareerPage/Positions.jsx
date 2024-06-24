@@ -6,7 +6,8 @@ const Positions = ({ jobs }) => {
             <div className="positions__wrap container">
                 <div className="positions__boxes">
                     {
-                        jobs && jobs.map(job => (
+                        jobs && jobs.map(
+                            job =>  job.placesAvailable && (
                             <PositionsItem job={job} key={job.id} />
                         ))
                     }

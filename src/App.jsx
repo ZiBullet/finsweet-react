@@ -18,7 +18,7 @@ import about3 from "./assets/images/about3.png";
 
 import blog1 from "./assets/images/blog1.png";
 import blog2 from "./assets/images/blog2.png";
-import PositionsItem from './pages/CareerPage/PositionsItem';
+import CareerInner from './pages/CareerPage/CareerInner';
 
 
 
@@ -68,7 +68,8 @@ const App = () => {
       city: "Bengaluru",
       type: "Full Time",
       salaryRange: "$10K - $18K",
-      equity: "No equity"
+      equity: "No equity",
+      placesAvailable: 5
     },
     {
       id: 2,
@@ -76,7 +77,8 @@ const App = () => {
       city: "Remote",
       type: "Full Time",
       salaryRange: "$10K - $18K",
-      equity: "No equity"
+      equity: "No equity",
+      placesAvailable: 3
     },
     {
       id: 3,
@@ -84,7 +86,8 @@ const App = () => {
       city: "Mumbai",
       type: "Full Time",
       salaryRange: "$08K - $10K",
-      equity: "4 to 5 Yrs Exp"
+      equity: "4 to 5 Yrs Exp",
+      placesAvailable: 1
     },
     {
       id: 4,
@@ -92,7 +95,8 @@ const App = () => {
       city: "Mumbai",
       type: "Full Time",
       salaryRange: "$08K - $10K",
-      equity: "4 to 5 Yrs Exp"
+      equity: "4 to 5 Yrs Exp",
+      placesAvailable: 4
     },
     {
       id: 5,
@@ -100,7 +104,8 @@ const App = () => {
       city: "Mumbai",
       type: "Full Time",
       salaryRange: "$08K - $10K",
-      equity: "4 to 5 Yrs Exp"
+      equity: "4 to 5 Yrs Exp",
+      placesAvailable: 3
     },
     {
       id: 6,
@@ -108,7 +113,8 @@ const App = () => {
       city: "California, USA",
       type: "Full Time",
       salaryRange: "$14K - $23K",
-      equity: "No equity"
+      equity: "No equity",
+      placesAvailable: 3
     },
     {
       id: 7,
@@ -116,7 +122,8 @@ const App = () => {
       city: "California, USA",
       type: "Full Time",
       salaryRange: "$14K - $23K",
-      equity: "No equity"
+      equity: "No equity",
+      placesAvailable: 7
     },
     {
       id: 8,
@@ -124,7 +131,8 @@ const App = () => {
       city: "Kolkata, India",
       type: "Full Time",
       salaryRange: "$5K - $6K",
-      equity: "Fresher"
+      equity: "Fresher",
+      placesAvailable: 4
     },
     {
       id: 9,
@@ -132,10 +140,10 @@ const App = () => {
       city: "Mumbai",
       type: "Full Time",
       salaryRange: "$08K - $10K",
-      equity: "4 to 5 Yrs Exp"
+      equity: "4 to 5 Yrs Exp",
+      placesAvailable: 2
     },
   ];
-
 
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
@@ -156,7 +164,7 @@ const App = () => {
         <Route path="/service" element={<ServicePage />} />
         <Route path="/company" element={<CompanyPage images={images} />} />
         <Route path="/career" element={<CareerPage jobs={jobs} />} />
-        <Route path="/career/:id" element={<PositionsItem />} />
+        <Route path="/career/:id" element={<CareerInner jobs={jobs} />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/policy" element={<PolicyPage />} />

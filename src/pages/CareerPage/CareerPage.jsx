@@ -1,6 +1,7 @@
-import Career from "./Career"
-import Positions from "./Positions"
-import Work from "./Work"
+import Career from "./Career";
+import Positions from "./Positions";
+import Work from "./Work";
+import Newsletter from "../../components/Newsletter";
 
 const CareerPage = ({ jobs }) => {
 
@@ -10,6 +11,7 @@ const CareerPage = ({ jobs }) => {
       <Career />
       <Positions jobs={jobs} />
       <Work />
+      <Newsletter />
     </main>
   )
 }

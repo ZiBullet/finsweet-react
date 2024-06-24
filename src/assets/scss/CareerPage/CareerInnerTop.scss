@@ -1,0 +1,75 @@
+$pink: #FFE0C7;
+$skyblue: #ECF8F9;
+$darkBlue: #232536;
+$black: #000000;
+
+.inner-top {
+    padding: 96px 0;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+    }
+
+    &__desc {
+        max-width: 490px;
+        width: 100%;
+    }
+
+    &__title-mini {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__info {
+        position: relative;
+        max-width: 515px;
+        width: 100%;
+        padding: 82px 80px;
+        background: $pink;
+
+        @media screen and (max-width: 1024px) {
+            align-self: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 18px;
+        }
+        &::after {
+            content: url("../icons/decor-lg.svg");
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 48px;
+            height: 52px;
+        }
+
+        &-title {
+            color: $darkBlue;
+            margin-bottom: 24px;
+        }
+
+        &-text {
+            color: $black;
+
+            &:not(&:last-of-type) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
