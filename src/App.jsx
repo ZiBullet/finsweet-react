@@ -69,7 +69,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$10K - $18K",
       equity: "No equity",
-      placesAvailable: 5
+      placesAvailable: 5,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 2,
@@ -78,7 +99,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$10K - $18K",
       equity: "No equity",
-      placesAvailable: 3
+      placesAvailable: 3,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 3,
@@ -87,7 +129,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$08K - $10K",
       equity: "4 to 5 Yrs Exp",
-      placesAvailable: 1
+      placesAvailable: 1,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 4,
@@ -96,7 +159,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$08K - $10K",
       equity: "4 to 5 Yrs Exp",
-      placesAvailable: 4
+      placesAvailable: 4,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 5,
@@ -105,7 +189,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$08K - $10K",
       equity: "4 to 5 Yrs Exp",
-      placesAvailable: 3
+      placesAvailable: 3,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 6,
@@ -114,7 +219,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$14K - $23K",
       equity: "No equity",
-      placesAvailable: 3
+      placesAvailable: 3,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 7,
@@ -123,7 +249,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$14K - $23K",
       equity: "No equity",
-      placesAvailable: 7
+      placesAvailable: 7,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 8,
@@ -132,7 +279,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$5K - $6K",
       equity: "Fresher",
-      placesAvailable: 4
+      placesAvailable: 4,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
     {
       id: 9,
@@ -141,7 +309,28 @@ const App = () => {
       type: "Full Time",
       salaryRange: "$08K - $10K",
       equity: "4 to 5 Yrs Exp",
-      placesAvailable: 2
+      placesAvailable: 2,
+      content: {
+        details: `Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+
+        Design & Create highly engaging industry-related content in both photo, gif & video format
+        
+        Publish Posts on various social media channels
+        
+        Promote content on social networks and monitor engagement (e.g. comments and shares)
+        
+        Research industry-related topics
+        
+        Editing audio and sound design on projects
+        
+        Engage in opportunities to develop original content and concepts for web and mobile
+        
+        Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.
+        
+        Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels`,
+        requerments: null,
+        resp: null
+      }
     },
   ];
 
@@ -154,6 +343,17 @@ const App = () => {
     setIsNavbarOpen(false);
   }
 
+  const showInnerContentHandler = (initialStr) => {
+    if (!initialStr) return;
+
+    const splitedStr = initialStr.split('\n');
+    const clearSplitedStr = splitedStr.filter(item => {
+      if (item.trim().length) return item;
+    })
+
+    return clearSplitedStr;
+  }
+
 
   return (
     <Router>
@@ -164,7 +364,7 @@ const App = () => {
         <Route path="/service" element={<ServicePage />} />
         <Route path="/company" element={<CompanyPage images={images} />} />
         <Route path="/career" element={<CareerPage jobs={jobs} />} />
-        <Route path="/career/:id" element={<CareerInner jobs={jobs} />} />
+        <Route path="/career/:id" element={<CareerInner jobs={jobs} showInnerContentHandler={showInnerContentHandler} />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/policy" element={<PolicyPage />} />
