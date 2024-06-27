@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from "./components/Navbar"
 import NavbarModal from './components/NavbarModal';
 import HomePage from "./pages/HomePage/HomePage"
@@ -346,14 +346,13 @@ const App = () => {
   const showInnerContentHandler = (initialStr) => {
     if (!initialStr) return;
 
-    const splitedStr = initialStr.split('\n');
+    const splitedStr = initialStr.split("\n");
     const clearSplitedStr = splitedStr.filter(item => {
       if (item.trim().length) return item;
     })
 
     return clearSplitedStr;
   }
-
 
   return (
     <Router>

@@ -10,9 +10,6 @@ $white: #FFFFFF;
     background: $darkBlue;
     border-bottom: 1px solid #FFFFFF0D;
     overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 998;
 
     &__nav {
         display: flex;
